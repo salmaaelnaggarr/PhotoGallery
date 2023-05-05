@@ -1,0 +1,248 @@
+body {
+	background-color: #292c37;
+	color: black;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+ul { padding: 0; margin: 0; }
+figure { margin: 0; }
+p:last-child { margin-bottom: 0; }
+
+.container-fluid { 
+	width: 100%; 
+	padding-left: 0;
+	padding-right: 0;
+	background-color: black;
+}
+
+.cd-slider-nav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1002;
+	background: none;
+}
+
+.navbar { padding: 0; }
+
+.tm-navbar { float: right; }
+.tm-navbar-bg {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;
+	background-color: #cc9fe7;
+	border-radius: 40px;
+	height: 100px;
+}
+
+button:focus { outline: none; }
+
+.cd-slider-nav a.navbar-brand {
+	font-size: 35px !important;
+	padding-top: 0;
+	padding-bottom: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	width: auto;
+}
+
+.navbar-nav .nav-item { float: none; }
+
+.cd-slider-nav a,
+.navbar-nav .nav-link {
+	background-color: transparent;
+	color: #461543;
+    display: table-cell;
+    font-weight: 400;
+    font-size: 1em;
+	vertical-align: middle;
+    width: 130px; 
+}
+
+
+.cd-slider-nav .nav-link:hover,
+.cd-slider-nav .nav-link:focus {
+	color: #ffffff;
+}
+
+.tm-social-link {
+	background-color: #cc9fe7;
+    color: #461543;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.cd-hero-slider.small-screen { height: 100%; }
+
+.tm-navbar {
+	position: absolute;
+    right: 10px;
+    top: 45px;
+}
+
+.cd-slider-nav .navbar-nav { background-color: rgba(255,255,255,0.7); }
+
+.cd-slider-nav a, 
+.navbar-nav .nav-link { height: 50px;
+                       font-family:Cursive; }
+
+
+.grid-item {
+	float: left;
+	width: 100%;
+	padding: 10px;
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 1;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+	display: none;
+	color:white;
+}
+
+
+.grid-item figure figcaption, .grid-item figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.grid-item figure {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.grid-item figure img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+
+.cd-hero-slider p.tm-figure-description { font-size: 1.2rem; }
+
+
+.cd-hero-slider .selected .cd-full-width p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 2em;
+    
+}
+.grid-item figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+
+@media only screen and (min-width: 992px) {
+	.tm-navbar-bg { 
+		padding-left: 25px; 
+		height: 80px;
+	}
+
+	.tm-navbar {
+		position: static;
+		height: auto !important;		
+	}
+
+	.cd-slider-nav .navbar-nav {
+		background: transparent;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.cd-slider-nav li {	
+		display: inline-block; 
+		width: auto;
+		height: auto;
+	}
+
+	.cd-slider-nav a, 
+	.navbar-nav .nav-link {
+		height: 80px;
+	}
+
+	.cd-hero-slider .cd-full-width { padding-top: 80px; }
+
+	.tm-social-icons-container { margin-bottom: 20px; }
+
+	.cd-full-width .container-fluid.tm-page-pad,
+	.cd-full-width .container-fluid.tm-page-pad {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cd-full-width .container-fluid.tm-page-width {
+		max-width: 1200px;
+	}
+
+	.grid-item { width: 25%; }	
+	.grid-item figure figcaption { padding: 1em; }	
+}
+
+
+
+@media only screen and (min-width: 1333px) {
+	.cd-slider-nav a,
+	.navbar-nav .nav-link {
+		font-size: 1.2em;
+		width: 160px;
+		height: 110px;
+	}
+	.cd-hero-slider .cd-full-width { padding-top: 110px; }
+	.cd-slider-nav a.navbar-brand { font-size: 3.5rem; }
+
+	.cd-full-width .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.tm-brand-icon { 
+		font-size: 3rem;
+    	padding: 10px;
+		margin-right: 15px;
+	}
+	.tm-navbar-bg { padding-left: 30px; }
+}
+
+
